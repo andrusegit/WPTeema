@@ -1,19 +1,21 @@
-<?php
-    get_header();
-    ?>
+<?php get_header() ?>
 
-    <h1>zingel</h1>
-    
+<main class="container">
+ 
 <?php
-    echo "<h1>Menüü:</h1>";
-    wp_nav_menu(array( 'theme_location' => 'links-menu' ));
-
+    the_post();
+    echo '<section class="content-block content-block-page">';
     echo "<h1>"; the_title(); echo "</h1>";
-    the_content();
-    //the_meta();
-    echo "<p>" . "Ainekood: " .
-    get_post_meta(get_the_ID(), $key="Aine", $single=true) .
-    "</p>";
+    echo "<p>"; the_content(); echo "</p>"; //the_excerpt();
+    echo '<nav class="content-block-nav"><a href="/">Tagasi</a></nav>';
+    echo "</section>";
+    //get_post_meta(get_the_ID(), $key="Aine", $single=true)
+?>
+    <aside>
+    <img src="" height="205px" width="220px">
+    </aside>
 
+</main>
+<?php
     get_footer();
 ?>

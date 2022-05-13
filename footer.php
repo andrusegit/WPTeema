@@ -1,4 +1,3 @@
 <footer>
-    <hr>
-    Ise tegin
+    &copy; Andrus 2022
 </footer>
