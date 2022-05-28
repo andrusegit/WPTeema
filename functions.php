@@ -11,3 +11,12 @@ function register_my_links_menu() {
   register_nav_menu('links-menu',__( 'Links Menu' ));
 }
 add_action( 'init', 'register_my_links_menu' );
+
+$args = array(
+  'default-position-x'     => 'left',
+  'default-position-y'     => 'top',
+  'default-repeat'     => 'no-repeat',
+  'default-color' => '4088d4',
+  'default-image' => get_template_directory_uri() . '/img/bkground.png',
+);
+add_theme_support( 'custom-background', $args );

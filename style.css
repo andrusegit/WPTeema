@@ -17,8 +17,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body {
-  background-image: url("/img/bkground.png");
-  background-repeat: no-repeat;
   background-color: #4088d4;
   font-family: Garamond, serif;
 }
@@ -28,9 +26,11 @@ body {
   flex-direction: row;
 }
 
+
 header {
   height: 120px;
 }
+
 
 header h1 {
   font-weight: bold;
