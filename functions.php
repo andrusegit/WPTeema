@@ -1,6 +1,6 @@
-
 <?php
-  function my_style_enqueue_styles() {
+
+function my_style_enqueue_styles() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style( 'my_style', get_template_directory_uri() . '/css/style.css' );
   }
@@ -17,6 +17,6 @@ $args = array(
   'default-position-y'     => 'top',
   'default-repeat'     => 'no-repeat',
   'default-color' => '4088d4',
-  'default-image' => get_template_directory_uri() . '/img/bkground.png',
+  'default-image' => get_template_directory_uri() . '/img/bkground.jpg',
 );
 add_theme_support( 'custom-background', $args );
